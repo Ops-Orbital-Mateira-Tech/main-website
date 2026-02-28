@@ -27,14 +27,12 @@ export default function Header() {
     <header className="bg-white shadow">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
-          <div
-            role="img"
-            aria-label="Logo placeholder"
-            className="w-10 h-10 rounded-md bg-gray-100 border border-gray-200 flex items-center justify-center"
-          >
-            {/* logo goes here */}
-          </div>
-          <span className="font-bold text-lg">Ops Orbital</span>
+          <img
+            src="/images/Logo.png"
+            alt="Ops Orbital Logo"
+            className="h-10 w-auto"
+          />
+          {/* <span className="font-bold text-lg">Ops Orbital</span> */}
         </Link>
         <nav>
           <ul className="flex gap-6 items-center">
