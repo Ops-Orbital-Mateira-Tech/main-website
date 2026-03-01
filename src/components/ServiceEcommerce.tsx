@@ -4,7 +4,7 @@ import Icon from './Icon'
 export default function ServiceEcommerce() {
   return (
     <section id="ecommerce" className="py-16 bg-white/2">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <header className="mb-6 flex items-start gap-4">
           <div className="p-3 rounded-md bg-pink-50 text-pink-600">
             <Icon name="ecommerce" size={28} color="currentColor" />
@@ -71,12 +71,12 @@ export default function ServiceEcommerce() {
           >
             Build an eCommerce store
           </a>
-          <a
+          {/* <a
             href="/case-studies"
             className="inline-block px-5 py-3 border border-pink-600 text-pink-600 rounded-md hover:bg-pink-50 transition"
           >
             See commerce case studies
-          </a>
+          </a> */}
         </div>
 
         {/* Commerce process & analytics */}

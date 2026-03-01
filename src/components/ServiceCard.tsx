@@ -25,7 +25,7 @@ export default function ServiceCard({ title, subtitle, bullets = [], href = '#',
   return (
     <a
       href={href}
-      className="group block p-6 rounded-lg shadow-sm bg-white/5 hover:shadow-lg transform hover:-translate-y-1 transition-all"
+      className="group block p-4 sm:p-6 rounded-lg shadow-sm bg-white/5 hover:shadow-lg transform hover:-translate-y-1 transition-all"
     >
       <div className="flex items-start gap-4">
         {icon ? (

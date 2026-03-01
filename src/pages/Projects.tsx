@@ -46,15 +46,15 @@ export default function Projects() {
   const filtered = filter === 'All' ? projects : projects.filter((p) => p.tags.includes(filter))
 
   return (
-    <div className="container mx-auto px-4 py-16">
-      <h1 className="text-3xl font-bold mb-6">Projects</h1>
+    <div className="container mx-auto px-4 py-10 sm:py-16">
+      <h1 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Projects</h1>
 
-      <div className="mb-6 flex gap-3 flex-wrap">
+      <div className="mb-4 sm:mb-6 flex gap-2 sm:gap-3 flex-wrap">
         {tags.map((t) => (
           <button
             key={t}
             onClick={() => setFilter(t)}
-            className={`text-sm px-3 py-1 rounded-md ${t === filter ? 'bg-indigo-600 text-white' : 'bg-slate-100 text-slate-800'}`}
+            className={`text-xs sm:text-sm px-2.5 sm:px-3 py-1 rounded-md ${t === filter ? 'bg-indigo-600 text-white' : 'bg-slate-100 text-slate-800'}`}
           >
             {t}
           </button>
@@ -75,9 +75,9 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-              <a href="#" className="inline-block mt-4 text-indigo-600">
+              {/* <a href="#" className="inline-block mt-4 text-indigo-600">
                 See Full Case Study →
-              </a>
+              </a> */}
             </div>
           </article>
         ))}

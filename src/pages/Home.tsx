@@ -2,22 +2,22 @@ import React from 'react'
 import Hero from '../components/Hero'
 import ServicesSection from '../components/ServicesSection'
 import ClientsCarousel from '../components/ClientsCarousel'
-import Icon from '../components/Icon'
+import TechStack from '../components/TechStack'
 
 export default function Home() {
   return (
     <div>
       <Hero />
-      <section className="py-16 container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-6">What We Do</h2>
+      <section className="py-12 sm:py-16 container mx-auto px-4">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">What We Do</h2>
         <ServicesSection />
       </section>
 
-      <section className="w-full bg-slate-900 text-white py-12">
+      <section className="w-full bg-slate-900 text-white py-10 sm:py-12">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div>
-              <h3 className="text-2xl font-semibold">Trusted by</h3>
+            <div className="text-center md:text-left">
+              <h3 className="text-xl sm:text-2xl font-semibold">Trusted by</h3>
               <p className="text-slate-300 mt-2">Leading teams and startups rely on our engineering and design teams.</p>
             </div>
             <div className="flex-1">
@@ -27,11 +27,18 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 container mx-auto px-4 text-slate-900">
-        <div className="py-8">
-          <h2 className="text-3xl font-bold mb-8">Projects</h2>
+      <TechStack
+        subtitle="Technologies we use to deliver robust software across web, mobile, and backend."
+        headingClassName="text-3xl font-bold"
+        sectionClassName="py-16 container mx-auto px-4 bg-white text-slate-900"
+        contentClassName="max-w-6xl mx-auto"
+      />
 
-          <div className="grid gap-12">
+      <section className="py-12 sm:py-16 container mx-auto px-4 text-slate-900">
+        <div className="py-4 sm:py-8">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Projects</h2>
+
+          <div className="grid gap-8 sm:gap-12">
             <article className="grid md:grid-cols-2 gap-6 items-stretch bg-white rounded-lg overflow-hidden shadow">
               <div className="relative h-64 md:h-auto">
                 <img
@@ -49,15 +56,15 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-              <div className="p-8 flex flex-col justify-center">
-                <h3 className="text-2xl font-semibold text-slate-900">Developed Custom Mobile App for LabelXChange</h3>
+              <div className="p-5 sm:p-6 md:p-8 flex flex-col justify-center">
+                <h3 className="text-xl sm:text-2xl font-semibold text-slate-900">Developed Custom Mobile App for LabelXChange</h3>
                 <p className="mt-3 text-slate-600">
                   A B2B marketplace platform for designer apparel — we built secure transactions, catalog search and a
                   performant admin portal to manage listings and orders.
                 </p>
-                <a href="/case-studies" className="inline-block mt-6 px-4 py-2 bg-indigo-600 text-white rounded-md">
+                {/* <a href="/case-studies" className="inline-block mt-6 px-4 py-2 bg-indigo-600 text-white rounded-md">
                   See Full Case Study →
-                </a>
+                </a> */}
               </div>
             </article>
 
@@ -84,14 +91,14 @@ export default function Home() {
                   A patient-focused health app with secure data handling, symptom tracking and telehealth integration to
                   support ongoing care.
                 </p>
-                <a href="/case-studies" className="inline-block mt-6 px-4 py-2 bg-indigo-600 text-white rounded-md">
+                {/* <a href="/case-studies" className="inline-block mt-6 px-4 py-2 bg-indigo-600 text-white rounded-md">
                   See Full Case Study →
-                </a>
+                </a> */}
               </div>
             </article>
 
             {/* small projects grid */}
-            <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-4 sm:mt-6 grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {[
                 { img: '/images/thumb-1.jpg', title: 'Inventory Platform', tags: ['Backend', 'SaaS'] },
                 { img: '/images/thumb-2.jpg', title: 'Retail Analytics', tags: ['Data', 'Web'] },

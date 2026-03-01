@@ -4,7 +4,7 @@ import Icon from './Icon'
 export default function ServiceApp() {
   return (
     <section id="app" className="py-16">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <header className="mb-6 flex items-start gap-4">
           <div className="p-3 rounded-md bg-green-50 text-green-600">
             <Icon name="app" size={28} color="currentColor" />
@@ -87,21 +87,6 @@ export default function ServiceApp() {
           >
             View mobile work
           </a>
-        </div>
-        {/* Tech stack */}
-        <div className="mt-16">
-          <h2 className="text-2xl font-semibold">Tech & tools</h2>
-          <p className="text-sm text-gray-500 mt-2">We use modern mobile stacks and tooling for quality and speed.</p>
-          <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-            {['Swift','Kotlin','React Native','Flutter','Firebase','AppCenter'].map((t) => (
-              <div
-                key={t}
-                className="p-4 rounded bg-gradient-to-b from-white/3 to-white/5 hover:shadow-md transition text-sm text-gray-600"
-              >
-                {t}
-              </div>
-            ))}
-          </div>
         </div>
 
         {/* Release & process */}

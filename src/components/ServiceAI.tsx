@@ -4,7 +4,7 @@ import Icon from './Icon'
 export default function ServiceAI() {
   return (
     <section id="ai" className="py-16 bg-gradient-to-r from-white/0 to-white/3">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <header className="mb-6 flex items-start gap-4">
           <div className="p-3 rounded-md bg-purple-50 text-purple-600">
             <Icon name="ai" size={28} color="currentColor" />

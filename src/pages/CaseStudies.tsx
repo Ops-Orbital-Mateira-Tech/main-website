@@ -7,16 +7,16 @@ const cases = [
 
 export default function CaseStudies() {
   return (
-    <div className="container mx-auto px-4 py-16">
-      <h1 className="text-3xl font-bold mb-6">Case Studies</h1>
-      <div className="grid gap-6 sm:grid-cols-2">
+    <div className="container mx-auto px-4 py-10 sm:py-16">
+      <h1 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Case Studies</h1>
+      <div className="grid gap-4 sm:gap-6 sm:grid-cols-2">
         {cases.map((c) => (
-          <article key={c.title} className="p-6 border rounded bg-white">
-            <h3 className="font-semibold text-xl mb-2">{c.title}</h3>
+          <article key={c.title} className="p-4 sm:p-6 border rounded bg-white">
+            <h3 className="font-semibold text-lg sm:text-xl mb-2">{c.title}</h3>
             <p className="text-gray-600">{c.desc}</p>
-            <a className="text-blue-600 mt-4 inline-block" href="#">
+            {/* <a className="text-blue-600 mt-4 inline-block" href="#">
               See Full Case Study
-            </a>
+            </a> */}
           </article>
         ))}
       </div>

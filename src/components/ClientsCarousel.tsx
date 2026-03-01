@@ -15,11 +15,11 @@ export default function ClientsCarousel() {
       <div className="marquee" aria-hidden>
         <div className="marquee-inner">
           {[...logos, ...logos].map((src, i) => (
-            <div key={`${src}-${i}`} className="flex-shrink-0 px-6">
+            <div key={`${src}-${i}`} className="flex-shrink-0 px-4 sm:px-6">
               <img
                 src={src}
                 alt="client logo"
-                className="h-12 object-contain filter grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition"
+                className="h-8 sm:h-10 md:h-12 object-contain filter grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition"
               />
             </div>
           ))}

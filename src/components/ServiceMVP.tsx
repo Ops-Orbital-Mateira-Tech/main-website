@@ -4,7 +4,7 @@ import Icon from './Icon'
 export default function ServiceMVP() {
   return (
     <section id="mvp" className="py-16">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <header className="mb-6 flex items-start gap-4">
           <div className="p-3 rounded-md bg-yellow-50 text-yellow-600">
             <Icon name="mvp" size={28} color="currentColor" />

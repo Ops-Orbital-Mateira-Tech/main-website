@@ -4,7 +4,7 @@ import Icon from './Icon'
 export default function ServiceSoftware() {
   return (
     <section id="software" className="py-16 bg-gradient-to-b from-white/0 to-white/5">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <div className="mb-8 flex items-start gap-4">
           <div className="p-3 rounded-md bg-indigo-50 text-indigo-600">
             <Icon name="software" size={28} color="currentColor" />
@@ -112,7 +112,7 @@ export default function ServiceSoftware() {
             <h3 className="font-semibold">Case studies</h3>
             <p className="text-sm text-gray-500 mt-2">
               We've built platforms for marketplaces, healthcare portals and logistics tools — driving measurable business
-              improvements. <a href="/case-studies" className="text-blue-600">See examples</a>.
+              improvements. {/* <a href="/case-studies" className="text-blue-600">See examples</a> */}.
             </p>
           </div>
         </div>
@@ -130,24 +130,6 @@ export default function ServiceSoftware() {
           >
             Request a quote
           </a>
-        </div>
-        {/* Tech stack */}
-        <div className="mt-16">
-          <h2 className="text-2xl font-semibold">Tech stack</h2>
-          <p className="text-sm text-gray-500 mt-2">Popular technologies we use to deliver robust software.</p>
-          <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 items-center">
-            {['React','Angular','Next.js','Vue.js','Flutter','Kotlin','Swift','Node.js','Python','Go'].map((t) => (
-              <div
-                key={t}
-                className="flex flex-col items-center gap-2 bg-gradient-to-b from-white/3 to-white/5 p-4 rounded hover:shadow-md transition"
-              >
-                <div className="w-12 h-12 rounded bg-indigo-50 text-indigo-600 flex items-center justify-center font-semibold text-sm">
-                  {t.charAt(0)}
-                </div>
-                <span className="text-xs text-gray-600">{t}</span>
-              </div>
-            ))}
-          </div>
         </div>
 
         {/* Process timeline */}
@@ -204,12 +186,12 @@ export default function ServiceSoftware() {
             <article className="p-6 bg-white/5 rounded">
               <h3 className="font-semibold">LabelXChange — B2B Marketplace</h3>
               <p className="text-sm text-gray-500 mt-2">Custom platform for apparel wholesale with search and secure transactions.</p>
-              <a href="/case-studies" className="text-sm text-blue-600 mt-3 inline-block">See full case study →</a>
+              {/* <a href="/case-studies" className="text-sm text-blue-600 mt-3 inline-block">See full case study →</a> */}
             </article>
             <article className="p-6 bg-white/5 rounded">
               <h3 className="font-semibold">HealthPortal — Patient management</h3>
               <p className="text-sm text-gray-500 mt-2">HIPAA-aware portal to track patient records, telehealth and analytics.</p>
-              <a href="/case-studies" className="text-sm text-blue-600 mt-3 inline-block">See full case study →</a>
+              {/* <a href="/case-studies" className="text-sm text-blue-600 mt-3 inline-block">See full case study →</a> */}
             </article>
           </div>
         </div>
