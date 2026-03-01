@@ -55,7 +55,8 @@ export default function Header() {
         </button>
         <ul
           role="menu"
-          className={`${open ? 'block opacity-100' : 'hidden md:block md:opacity-0 md:pointer-events-none'} ${mobileOpen ? 'mt-2 pl-4 border-l-2 border-gray-200' : ''} md:absolute md:right-0 md:mt-2 md:w-56 md:bg-white md:rounded-md md:shadow-lg md:border md:border-gray-100 md:border-l-0 md:pl-0 transition-opacity`}
+          onMouseDown={(e) => e.stopPropagation()}
+          className={`${open ? 'block opacity-100' : 'hidden md:block md:opacity-0 md:pointer-events-none'} ${mobileOpen ? 'mt-2 pl-4 border-l-2 border-gray-200' : ''} md:absolute md:right-0 md:mt-2 md:w-56 md:bg-white md:rounded-md md:shadow-lg md:border md:border-gray-100 md:border-l-0 md:pl-0 md:z-[60] transition-opacity`}
         >
           <li>
             <Link to="/services/software" onClick={() => { closeDropdown(); setMobileOpen(false) }} className="flex items-center gap-3 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">
@@ -115,8 +116,8 @@ export default function Header() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden md:block">
-          <ul className="flex gap-6 items-center">
+        <nav className="hidden md:block overflow-visible">
+          <ul className="flex gap-6 items-center overflow-visible">
             {navLinks}
           </ul>
         </nav>
